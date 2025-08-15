@@ -12,8 +12,11 @@
 
 # Technical question
 
-weight_pounds = input("What is your weight in pounds? ")
+#weight_pounds = input("What is your weight in pounds? ")
 
-weight_kg = float(weight_pounds) * 0.45359237
+#weight_kg = float(weight_pounds) * 0.45359237
 
-print("You weigh ", weight_kg, " kilograms.")
+#print("You weigh ", weight_kg, " kilograms.")
+
+name = 'MIKAEL'
+print(name[0:3])  # Output: MIK
