@@ -1,10 +1,10 @@
-name = input("What is your name? ")
+#name = input("What is your name? ")
 
-print('hi ' + name + '!')
+#print('hi ' + name + '!')
 
  #learn about type conversion
-
-age = input("How old are you? ")
-# Convert age to an integer
-age = int(age)
-print('You are ' + str(age) + ' years old!')
+birth_year = input("When were you born? ")
+print(type(birth_year))
+age = 2025 - int(birth_year)
+print(type(age))
+print("Mike, you must be  ", age,  " years old!")
