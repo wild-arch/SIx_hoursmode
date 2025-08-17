@@ -18,19 +18,21 @@
 
 #print("You weigh ", weight_kg, " kilograms.")
 
-msg = '''
-dear mike,
+#msg = '''
+#dear mike,
 
-you are the f* best!
-sincerely,
-your biggest fan
-mike
+#you are the f* best!
+#sincerely,
+#your biggest fan
+#mike
 
-'''
 
-print(msg.find('dear'))
-print(msg.center(50, '*'))
-print(msg.upper())
-print(msg.lower())
-print(msg.replace('mike', 'mike the great'))
+good_credit = True
+price = 1000000
+if good_credit:
+    down_payment = (price/100) * 10
+    print(f"${down_payment}" )
+else:
+    down_payment = (price/100) * 20
+    print(f"${down_payment}" )
 
