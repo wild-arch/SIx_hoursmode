@@ -35,9 +35,10 @@ from operator import length_hint
 
 
 
-# for loop
-prices = [10, 20, 30]
-total = 0
-for price in prices:
-    total += price
-print("Total price is: ", total)
+# for loop nested
+star = [2, 2, 2, 2, 5]
+for x in star:
+    output = ''
+    for y in range(x):
+        output += '*'
+    print(output)
