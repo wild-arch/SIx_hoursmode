@@ -1,4 +1,5 @@
 #name = input("What is your name? ")
+from operator import length_hint
 
 #print('hi ' + name + '!')
 
@@ -35,4 +36,12 @@ if good_credit:
 else:
     down_payment = (price/100) * 20
     print(f"${down_payment}" )
+
+name = input("What is your name? ")
+if len(name) < 3:
+    print("Name must be at least 3 characters long.")
+elif len(name) > 50:
+    print("Name must be less than 50 characters long.")
+else:
+    print("Name is okay.")
 
