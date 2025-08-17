@@ -31,14 +31,29 @@ from operator import length_hint
 
     # weight converter
 
-weight = input("What is your weight? ")
-weight = int(weight)
-pounds = weight * 0.45
-grams = weight * 2.20
 
-print("(L)bs or (K)g? ")
-if input().lower() == "l":
-    print(f"You weigh {pounds} kilograms.")
-else:
-    print(f"You weigh {grams} pounds.")
 
+
+
+# car game
+help = """
+Welcome to the car game!
+start - Start the car
+stop - Stop the car
+quit - Quit the game
+"""
+quit = False
+
+while True:
+    command = input(">").lower()
+    if command == "help":
+        print(help)
+    elif command == "start":
+        print("Car started... Ready to go!")
+    elif command == "stop":
+        print("Car stopped.")
+    elif command == "quit":
+        print("Game over.")
+        break
+    else:
+        print("I don't understand that command.")
