@@ -28,20 +28,17 @@ from operator import length_hint
 #mike
 
 
-good_credit = True
-price = 1000000
-if good_credit:
-    down_payment = (price/100) * 10
-    print(f"${down_payment}" )
-else:
-    down_payment = (price/100) * 20
-    print(f"${down_payment}" )
 
-name = input("What is your name? ")
-if len(name) < 3:
-    print("Name must be at least 3 characters long.")
-elif len(name) > 50:
-    print("Name must be less than 50 characters long.")
+    # weight converter
+
+weight = input("What is your weight? ")
+weight = int(weight)
+pounds = weight * 0.45
+grams = weight * 2.20
+
+print("(L)bs or (K)g? ")
+if input().lower() == "l":
+    print(f"You weigh {pounds} kilograms.")
 else:
-    print("Name is okay.")
+    print(f"You weigh {grams} pounds.")
 
