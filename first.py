@@ -1,8 +1,8 @@
 # functions
 def square(num):
-    return num * num
+   print(num * num)
 
-answer = square(5)
+answer = square(9)
 
 print(answer)
 
