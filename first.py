@@ -1,8 +1,10 @@
 # functions
-def basic_tryout():
-    print("Hello World")
+def basic_tryout(name):
+    print(f"{name} is a great name")
     print("Hello again")
 
 print("mike")
-basic_tryout()
+basic_tryout("mpussios")
 print("hi")
+
+
