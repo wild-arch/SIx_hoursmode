@@ -1,6 +1,9 @@
-x = int(input("What's x? "))
-y = int(input("What's y? "))
+# Get the user's input
+x = float(input("What's x? "))
+y = float(input("What's y? "))
 
-z = x * y
+# Create a rounded result
+z = round(x * y)
 
-print(z)
+# Print the formatted result
+print(f"{z:,}")
