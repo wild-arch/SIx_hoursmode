@@ -1,8 +1,3 @@
-# functions
-def square(num):
-   print(num * num)
-
-answer = square(9)
-
-print(answer)
-
+name = input("Enter your name: ")
+name = name.title().strip()
+print(name)
