@@ -1,11 +1,9 @@
-# Create our own function
-def hello(to="world"):
-    print("hello,", to)
+x = int(input("What's x? "))
+y = int(input("What's y? "))
 
-
-# Output using our own function
-name = input("What's your name? ")
-hello(name)
-
-# Output without passing the expected arguments
-hello()
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+elif x == y:
+    print("x is equal to y")
