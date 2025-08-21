@@ -1,14 +1,9 @@
-def main():
-    x = int(input("Enter a number: "))
-    if is_even(x):
-        print("its an even number")
-    else:
-        print("its an odd number")
+name = input("What's your name? ").lower().title()
 
-def is_even(x):
-    if x % 2 == 0:
-        return True
-    else:
-        return False
-
-main()
+match name:
+    case "Harry" | "Ron" | "Hermione":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case _:
+        print("Who?")
