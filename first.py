@@ -1,9 +1,14 @@
-x = int(input("What's x? "))
-y = int(input("What's y? "))
+def main():
+    x = int(input("Enter a number: "))
+    if is_even(x):
+        print("its an even number")
+    else:
+        print("its an odd number")
 
-if x < y:
-    print("x is less than y")
-elif x > y:
-    print("x is greater than y")
-elif x == y:
-    print("x is equal to y")
+def is_even(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
+
+main()
