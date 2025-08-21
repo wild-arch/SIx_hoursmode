@@ -1,9 +1,11 @@
-# Get the user's input
-x = float(input("What's x? "))
-y = float(input("What's y? "))
+# Create our own function
+def hello(to="world"):
+    print("hello,", to)
 
-# Calculate the result
-z = x / y
 
-# Print the result
-print(f"{z:.5f}")
+# Output using our own function
+name = input("What's your name? ")
+hello(name)
+
+# Output without passing the expected arguments
+hello()
