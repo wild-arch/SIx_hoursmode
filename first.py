@@ -6,4 +6,4 @@ y = float(input("What's y? "))
 z = x / y
 
 # Print the result
-print(f"{z:.2f}")
+print(f"{z:.5f}")
